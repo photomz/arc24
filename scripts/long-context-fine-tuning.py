@@ -1,4 +1,4 @@
-
+# Deprecated, see Iteration 46.
 import os
 import random
 import json
@@ -451,7 +451,7 @@ def create_validation_dataset(filepath, prompt_version, grid_encoder, tokenizer,
     dataset = Dataset.from_dict({'text': prompts})
     return dataset
 
-
+# Unused, no ref
 def random_prompt_generator(train_datasets, grid_encoder, tokenizer, max_seq_len, random_seed,
                             remove_train_samples_to_fit_max_seq_len,
                             log_prompt_length_every=1000,
@@ -465,6 +465,7 @@ def random_prompt_generator(train_datasets, grid_encoder, tokenizer, max_seq_len
     """
     data = dict()
     for idx, (filepath, prompt_version) in tqdm(enumerate(train_datasets), desc='Loading training datasets'):
+        # Deprecated: no /dataset.py
         if filepath.startswith('omni-arc'):
             n_tasks = int(filepath.split('-')[-1])
             from omniarc.dataset import create_dataset as create_omniarc_dataset

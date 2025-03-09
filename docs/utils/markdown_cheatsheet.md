@@ -23,7 +23,7 @@ Examples of inline equations. Let's consider $e^{q_i} = p_i + 1$ and $e^{b_i} = 
 [http://www.tablesgenerator.com/markdown_tables#](http://www.tablesgenerator.com/markdown_tables#)
 
 | representation_size | fmeasure | val_fmeasure |
-|---------------------|----------|--------------|
+| ------------------- | -------- | ------------ |
 | 1024                | 0.893    | 0.573        |
 | 512                 | 0.819    | 0.476        |
 | 256                 | 0.676    | 0.365        |
